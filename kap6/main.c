@@ -3,6 +3,7 @@
 
 int main(void){
     double d1, d2, d3;
+    int i1;
     my_name();
     skriv_flera('j', 10);
     d1 = upphoj(3, 3);
@@ -11,7 +12,9 @@ int main(void){
     printf("%.2lf\n", d2);
     d3 = nfak(5);
     printf("%.2lf\n", d3);
-    roten();
+    //roten();
+    i1 = storsta_div(20, 12);
+    printf("%d\n", i1);
     printf("\nPress any key to exit..");
     while ( getchar() != '\n' );
         getchar();

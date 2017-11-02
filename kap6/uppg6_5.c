@@ -1,18 +1,16 @@
+/*
 #include <time.h>
 #include <stdlib.h>
 #include <stdio.h>
 
 void roten(void){
-    double g, h = 2, x, x_ny;
-    static const int MIN = 0.000001; 
+    double g = 2;
+    static const double MAX = 0.000001; 
     srand(time(NULL));
-    double r = rand() % 10000;
-    printf("Gissa roten: ");
-    scanf("%lf", &g);
-    //x = g * h;
-    while((r - x_ny) < MIN){
-        h = (g + (r / g)) / 2;
-        x_ny = g * h;
+    double x = rand() % 10000;
+    while((x - g) <= MAX){ //Körs aldrig?
+        g = (g + (x / g)) / 2;
     }
-    printf("r = %lf och gissning = %lf", r, x_ny);
+    printf("x = %lf och gissning = %lf", x, g);
 }
+*/
