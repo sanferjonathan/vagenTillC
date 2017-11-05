@@ -15,6 +15,8 @@ int main(void){
     //roten();
     i1 = storsta_div(20, 12);
     printf("%d\n", i1);
+    krona_klave();
+    queue();
     printf("\nPress any key to exit..");
     while ( getchar() != '\n' );
         getchar();
