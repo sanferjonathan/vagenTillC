@@ -2,7 +2,7 @@
 void swap(char *text, int a){
     char *p, temp;
     p = text;
-    int i = 0, j = a - 1;
+    int i = 0, j = a - 2;
     while(i < j){
         temp = *(text + i);
         *(text + i) = *(p + j);
